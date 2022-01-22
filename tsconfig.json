@@ -1,0 +1,19 @@
+{
+    "extends": "@tsconfig/svelte/tsconfig.json",
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules/*",
+        "__sapper__/*",
+        "public/*"
+    ],
+    "compilerOptions": {
+        "target": "ESNext",
+        "watch": true,
+        "lib": [
+            "DOM",
+            "es2017"
+        ]
+    }
+}
