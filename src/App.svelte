@@ -5,6 +5,8 @@
 	import Directives from "./components/Directives.svelte";
 	import Transitions from "./Transitions.svelte";
 	import Animation from "./components/Animation.svelte";
+	import GrandParent from "./components/events/GrandParent.svelte";
+	import DomEventParent from "./components/events/DomEventParent.svelte";
 
 	export let name: string;
 </script>
@@ -42,6 +44,14 @@
 	<section>
 		<h1>Animations</h1>
 		<Animation />
+	</section>
+	<section>
+		<h1>Event forwarding</h1>
+		<GrandParent />
+	</section>
+	<section>
+		<h1>DOM event</h1>
+		<DomEventParent />
 	</section>
 </main>
 
