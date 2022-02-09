@@ -7,6 +7,9 @@
 	import Animation from "./components/Animation.svelte";
 	import GrandParent from "./components/events/GrandParent.svelte";
 	import DomEventParent from "./components/events/DomEventParent.svelte";
+	import Video from "./components/media/Video.svelte";
+	import Image from "./components/media/Image.svelte";
+	import Gallery from "./components/media/Gallery.svelte";
 
 	export let name: string;
 </script>
@@ -52,6 +55,22 @@
 	<section>
 		<h1>DOM event</h1>
 		<DomEventParent />
+	</section>
+	<section>
+		<h1>Media</h1>
+		<Video />
+	</section>
+	<section>
+		<h1>Image</h1>
+		<Image
+			src="https://cdn.pixabay.com/photo/2022/01/31/12/46/bird-6983434_960_720.jpg"
+			alt="Birdie"
+			description="Birdie on branch"
+		/>
+	</section>
+	<section>
+		<h1>Gallery</h1>
+		<Gallery />
 	</section>
 </main>
 

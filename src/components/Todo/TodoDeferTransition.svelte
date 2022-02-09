@@ -2,7 +2,7 @@
 	import { quintOut } from "svelte/easing";
 	import { crossfade, CrossfadeParams } from "svelte/transition";
 	import { flip } from "svelte/animate";
-	import type { Todo } from "./types";
+	import type { Todo } from "../../utils/types";
 
 	// flip: First, Last, Invert, Play
 

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Parent from "./Parent.svelte";
 
+	let value = 0;
 	const handleMessage = (event) => {
 		alert(event.detail.text);
 	};
@@ -8,7 +9,8 @@
 
 <div>
 	<h2>GrandParent</h2>
-	<Parent on:message={handleMessage} />
+	<div>Value updated by Parent: {value}</div>
+	<Parent on:message={handleMessage} bind:parentValue={value} />
 </div>
 
 <style>
