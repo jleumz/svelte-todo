@@ -91,4 +91,8 @@
 			max-width: none;
 		}
 	}
+
+	h1:focus {
+		outline: 0px;
+	}
 </style>

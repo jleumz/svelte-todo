@@ -11,7 +11,9 @@
 	<Router>
 		<nav>
 			<Link to="/">Home</Link>
+			<span>|</span>
 			<Link to="drawing">Drawing</Link>
+			<span>|</span>
 			<Link to="rebase">Rebase</Link>
 
 			<div>

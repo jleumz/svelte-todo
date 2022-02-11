@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { element, onMount } from "svelte/internal";
+	import { onMount } from "svelte/internal";
 
 	let time = 0;
 	let duration;

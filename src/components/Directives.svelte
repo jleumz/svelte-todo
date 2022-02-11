@@ -2,7 +2,7 @@
 	let width;
 	let height;
 	let size: number = 42;
-	let text: String = "Edit me";
+	let text = "Edit me";
 </script>
 
 <h2>Use Directives</h2>
@@ -19,3 +19,10 @@
 		<span style="font-size: {size}px">{text}</span>
 	</div>
 </section>
+
+<style>
+	input[type="text"]:focus {
+		box-shadow: 0 0 0 2px rgba(224, 124, 9, 0.4);
+		outline: 0px;
+	}
+</style>
