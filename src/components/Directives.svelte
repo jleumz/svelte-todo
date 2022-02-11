@@ -22,7 +22,7 @@
 
 <style>
 	input[type="text"]:focus {
-		box-shadow: 0 0 0 2px rgba(224, 124, 9, 0.4);
+		box-shadow: 0 0 0 2px rgba(224, 124, 9, 0.3);
 		outline: 0px;
 	}
 </style>
