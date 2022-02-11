@@ -13,7 +13,8 @@
 
 <style>
 	.container {
-		width: 100%;
+		display: inline-block;
+		width: 50%;
 		position: relative;
 	}
 
