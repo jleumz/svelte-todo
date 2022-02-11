@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Router, Link, Route } from "svelte-navigator";
 	import Drawing from "./routes/Drawing.svelte";
-	import Rebase from "./routes/Rebase.svelte";
+	import Doc from "./routes/Doc.svelte";
 	import Tutorial from "./routes/Tutorial.svelte";
 	export let name: string;
 </script>
@@ -15,27 +15,25 @@
 			<Link to="drawing">Drawing</Link>
 			<span>|</span>
 			<Link to="rebase">Rebase</Link>
-
-			<div>
-				<Route path="/">
-					<Tutorial />
-				</Route>
-				<Route path="drawing">
-					<Drawing />
-				</Route>
-				<Route path="rebase">
-					<Rebase />
-				</Route>
-			</div>
 		</nav>
+		<div>
+			<Route path="/">
+				<Tutorial />
+			</Route>
+			<Route path="drawing">
+				<Drawing />
+			</Route>
+			<Route path="rebase">
+				<Doc />
+			</Route>
+		</div>
 	</Router>
 </main>
 
 <style>
 	main {
 		text-align: center;
-		padding: 1em;
-		max-width: 250px;
+		/* max-width: 250px; */
 		margin: 0 auto;
 	}
 
